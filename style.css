@@ -61,23 +61,38 @@ body{
 button{
     background: none;
     color: #f2f6f7;
+    border-radius: 50%;
     border: none;
     height: 45px;
     width: 45px;
+}
+
+button:hover{
+    background-color: #36474f;
+    transition: 3s;
 }
 
 .round{
     background-color: #e7e7e7;
     border: 1px solid black;
     border-radius: 50%;
+    color:black
 }
 
 .orange{
     background-color: orangered;
+    color:white
 }
 
 .input{
     height: 20vh;
+}
+.input-content{
+    height: 40%;
+    align-items: center;
+    display: grid;
+    justify-items: end;
+    font-size:xx-large;
 }
 
 .tip{
@@ -98,6 +113,7 @@ width: 20px;
 
     }
     .container {
-        width: 50%;
+        width: 40%;
     }
+
 }

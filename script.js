@@ -5,7 +5,7 @@ function display(value) {
     evaluate.innerText += value;
 }
 
-function returnTozero() {
+function returnToZero() {
     evaluate.innerText = "0";
     result.innerText = "";
 }
@@ -16,16 +16,12 @@ function del(){
     evaluate.innerText = str.join("");
 }
 
-function resul() {
+function displayResult() {
     let eva = evaluate.innerText;
     let res = eval(eva);
     result.innerText = res;
 };
 
 function displayModal() {
-    if (modal.style.display === "block") {
-        modal.style.display = "none";
-    } else {
-        modal.style.display = "block";
-    }
+    Modal.style.display = "block";
 }
