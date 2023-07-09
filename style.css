@@ -1,0 +1,103 @@
+body{
+    background-color: #e7e7e7;
+}
+
+.bg {
+    height: 100vh;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e7e7e7;
+}
+
+.container {
+    width: 70%;
+    height: fit-content;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.display{
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    height: 40%;
+    background-color:  #36474f;
+    color: #f2f6f7;
+    display: flex;
+    justify-content: center;
+}
+
+.button{
+    background-color:  #18212a;
+    color: #f2f6f7;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    height: 60%;
+}
+
+.width{
+    width:80%;
+    display: grid;
+    align-items: center;
+}
+.display-top{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    height: fit-content;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+    grid-template-rows: repeat(5, 60px);
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+button{
+    background: none;
+    color: #f2f6f7;
+    border: none;
+    height: 45px;
+    width: 45px;
+}
+
+.round{
+    background-color: #e7e7e7;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.orange{
+    background-color: orangered;
+}
+
+.input{
+    height: 20vh;
+}
+
+.tip{
+background-color: #e7e7e7;
+height: 1px;
+width: 20px;
+}
+
+.justify{
+    display: grid;
+    justify-content: center;
+}
+
+@media screen and (min-width: 1440px) {
+    .grid{
+        grid-template-columns: repeat(4, 80px);
+        grid-template-rows: repeat(5, 80px);
+
+    }
+    .container {
+        width: 50%;
+    }
+}

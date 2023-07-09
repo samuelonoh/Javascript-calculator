@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>calculator</title>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="container">
+            <div class="display">
+                <div class=" width">
+                    <div class="display-top">
+                        <h3>calculator</h3>
+                        <div class="modal" id="modal">
+                            <i class="bi bi-moon"></i>
+                            <i class="bi bi-moon-fill"></i>
+                        </div>
+                        <i class="bi bi-three-dots-vertical"></i>
+                    </div>
+                    <div class="input" id="">
+                        <div style="float: right;">
+                            <div id="evaluate"></div>
+                            <div id="result"></div>
+                        </div>
+                    </div>
+                    <div class="justify">
+                        <div class="tip"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="button">
+
+
+                <div class="grid">
+                    <button onclick="returnTozero()">AC</button>
+                    <button onclick="del()"><i class="bi bi-backspace"></i></button>
+                    <button onclick="display('%')">%</button>
+                    <button class="round" style="color:black">÷</button>
+                    <button onclick="display('8')">8</button>
+                    <button onclick="display('9')">9</button>
+                    <button onclick="display('7')">7</button>
+                    <button class="round" style="color:black">x</button>
+                    <button onclick="display('4')">4</button>
+                    <button onclick="display('5')">5</button>
+                    <button onclick="display('6')">6</button>
+                    <button class="round" style="color:black">-</button>
+                    <button onclick="display('1')">1</button>
+                    <button onclick="display('2')">2</button>
+                    <button onclick="display('3')">3</button>
+                    <button class="round" style="color:black">+</button>
+                    <button><i class="bi bi-recycle"></i></button>
+                    <button onclick="display('0')">0</button>
+                    <button onclick="display('.')">.</button>
+                    <button class="round orange" style="color:white" onclick="resul()">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
