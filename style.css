@@ -1,119 +1,135 @@
-body{
-    background-color: #e7e7e7;
+* {
+    padding: 0%;
+    margin: 0%;
 }
 
-.bg {
-    height: 100vh;
-    color: aliceblue;
+main {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100vh;
     background-color: #e7e7e7;
 }
 
-.container {
-    width: 70%;
-    height: fit-content;
-    border-radius: 50px;
+.calculator {
+    height: 90vh;
+    width: 60vw;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 30px;
+}
+
+.history {
     display: flex;
     flex-direction: column;
-}
-
-.display{
-    border-top-right-radius: 50px;
-    border-top-left-radius: 50px;
-    height: 40%;
-    background-color:  #36474f;
-    color: #f2f6f7;
-    display: flex;
-    justify-content: center;
-}
-
-.button{
-    background-color:  #18212a;
-    color: #f2f6f7;
-    border-bottom-right-radius: 50px;
-    border-bottom-left-radius: 50px;
-    height: 60%;
-}
-
-.width{
-    width:80%;
-    display: grid;
-    align-items: center;
-}
-.display-top{
-    display: flex;
-    align-items: center;
-    justify-content:space-between;
-    height: fit-content;
-}
-
-.grid{
-    display: grid;
-    grid-template-columns: repeat(4, 50px);
-    grid-template-rows: repeat(5, 60px);
-    justify-content: space-around;
-    align-items: center;
-    color: white;
-}
-
-button{
-    background: none;
-    color: #f2f6f7;
-    border-radius: 50%;
-    border: none;
-    height: 45px;
-    width: 45px;
-}
-
-button:hover{
+    justify-content: flex-end;
+    align-items: end;
+    height: 0vh;
+    width: 30vw;
+    overflow-y: hidden;
+    position: absolute;
+    border-radius: 30px;
     background-color: #36474f;
-    transition: 3s;
+    transition: 1s;
 }
 
-.round{
-    background-color: #e7e7e7;
-    border: 1px solid black;
-    border-radius: 50%;
-    color:black
+.calSpace {
+    height: 30vh;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: #36474f;
+    color: #f2f6f7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
-.orange{
-    background-color: orangered;
-    color:white
-}
-
-.input{
-    height: 20vh;
-}
-.input-content{
-    height: 40%;
+.nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 30px;
     align-items: center;
-    display: grid;
-    justify-items: end;
-    font-size:xx-large;
 }
 
-.tip{
-background-color: #e7e7e7;
-height: 1px;
-width: 20px;
+.evaluate {
+    text-align: right;
+    margin-right: 30px;
 }
 
-.justify{
-    display: grid;
+.line {
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+
+.calButtons {
+    height: 60vh;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: #18212a;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.calButtons div {
+    display: flex;
     justify-content: center;
+    width: 25%;
 }
 
-@media screen and (min-width: 1440px) {
-    .grid{
-        grid-template-columns: repeat(4, 80px);
-        grid-template-rows: repeat(5, 80px);
+.special {
+    width: 50px;
+    height: 50px;
+    background: #e7e7e7 !important;
+    border-radius: 50%;
+    color: rgba(0, 0, 0, 0.831) !important;
+}
 
-    }
-    .container {
-        width: 40%;
-    }
+.equal {
+    background: #ff6531 !important;
+    color: white !important;
+}
+.special:hover{
+    background-color: #c4c4c4 !important;
+}
 
+.equal:hover{
+    background-color: #f57a51 !important;
+}
+
+.calButtons button {
+    color: #f2f6f7;
+    font-size: 20px;
+    background: none;
+    border: none;
+}
+
+.calButtons button:hover {
+    width: 50px;
+    height: 50px;
+    background: #0d0c0c55;
+    border-radius: 50%;
+}
+
+#result {
+    margin-top: 15px;
+}
+
+.modal {
+    position: absolute;
+    background-color: #e7e7e7;
+    color: #18212a;
+    padding: 10px 20px;
+    line-height: 40px;
+    margin-left: -120px;
+    display: none;
+}
+
+.modal p {
+    cursor: pointer;
+}
+
+.modal p:hover {
+    color: black;
 }
